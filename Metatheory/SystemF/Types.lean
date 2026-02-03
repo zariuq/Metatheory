@@ -105,7 +105,7 @@ theorem shiftTyDown_shiftTyUp_cancel (τ : Ty) (c : Nat) :
       exact if_pos h
     · simp only [if_neg h]
       unfold shiftTyDown
-      have h' : ¬(n + 1 < c) := Nat.not_lt_of_le (Nat.le_step (Nat.le_of_not_lt h))
+      have h' : ¬(n + 1 < c) := Nat.not_lt_of_ge (Nat.le_succ_of_le (Nat.le_of_not_lt h))
       rw [if_neg h']
       exact congrArg tvar (Nat.succ_sub_one n)
   | arr τ₁ τ₂ ih₁ ih₂ =>

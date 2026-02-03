@@ -1,7 +1,7 @@
 # Metatheory
 
-[![Lean 4](https://img.shields.io/badge/Lean-4.24.0-blue.svg)](https://lean-lang.org/)
-[![Mathlib](https://img.shields.io/badge/Mathlib-v4.24.0-green.svg)](https://github.com/leanprover-community/mathlib4)
+[![Lean 4](https://img.shields.io/badge/Lean-4.27.0-blue.svg)](https://lean-lang.org/)
+[![Mathlib](https://img.shields.io/badge/Mathlib-v4.27.0-green.svg)](https://github.com/leanprover-community/mathlib4)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A comprehensive **programming language metatheory library for Lean 4**, providing formally verified proofs of fundamental results in rewriting theory and type systems.
@@ -37,7 +37,7 @@ Metatheory formalizes core results from programming language theory:
 
 ### Prerequisites
 
-- [Lean 4](https://lean-lang.org/lean4/doc/setup.html) (version 4.24.0 or compatible)
+- [Lean 4](https://lean-lang.org/lean4/doc/setup.html) (version 4.27.0 or compatible)
 - [Lake](https://github.com/leanprover/lake) (included with Lean)
 - [Mathlib](https://github.com/leanprover-community/mathlib4) (automatically fetched by Lake)
 

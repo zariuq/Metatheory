@@ -49,7 +49,7 @@ theorem step_loop : Plus Step a a := by
 theorem step_not_terminating : ¬ Terminating Step := by
   intro hterm
   have hloop : Plus Step a a := step_loop
-  exact (hterm.isIrrefl.irrefl a) hloop
+  exact (WellFounded.irrefl hterm).irrefl a hloop
 
 /-! ## Local Decreasing -/
 
