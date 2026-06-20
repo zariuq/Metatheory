@@ -320,7 +320,7 @@ example : ⊢ polyId : idTy := by
   apply HasType.lam
   · simp only [Ty.WF]; omega
   · apply HasType.var
-    native_decide
+    rfl
 
 /-- Church true has type ∀α. α → α → α -/
 example : ⊢ cTrue : boolTy := by
@@ -332,7 +332,7 @@ example : ⊢ cTrue : boolTy := by
   · apply HasType.lam
     · simp only [Ty.WF]; omega
     · apply HasType.var
-      native_decide
+      rfl
 
 /-- Church false has type ∀α. α → α → α -/
 example : ⊢ cFalse : boolTy := by
@@ -344,6 +344,6 @@ example : ⊢ cFalse : boolTy := by
   · apply HasType.lam
     · simp only [Ty.WF]; omega
     · apply HasType.var
-      native_decide
+      rfl
 
 end Metatheory.SystemF
