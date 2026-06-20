@@ -1019,7 +1019,6 @@ theorem shiftTermUp_substTerm_comm_lt (d c k : Nat) (hk : k < c) (P M : Term) :
     -- Need: shiftTermUp 1 0 (shiftTermUp d c P) = shiftTermUp d (c + 1) (shiftTermUp 1 0 P)
     have hP : shiftTermUp 1 0 (shiftTermUp d c P) = shiftTermUp d (c + 1) (shiftTermUp 1 0 P) := by
       have hcomm := shiftTermUp_comm_succ (d := d) (b := 0) (c := c) (Nat.zero_le c) P
-      simp only [] at hcomm
       exact hcomm.symm
     simp only [Nat.add_assoc] at h1
     rw [h1, ← hP]
